@@ -1,0 +1,49 @@
+HTML
+
+<div> </div> is a division
+Shortcut to create a div with id #thisID
+
+JavaScript
+
+Comments single line is //
+Comments multiple line is /* */
+
+console - console object
+
+console.log() -- logs to the console
+console.error("something bad") -- logs an error in the console
+console.warn("this may go wrong") -- Logs an warning in the console
+
+Document -- document object -- is an object that represents the webpage,
+DOM - Document object module
+
+Document.getElementByID('id') -- this retrieves something from the document
+
+
+//Variables
+
+//old style
+var myName = 'Kallum'; //string
+var country; //undefined
+
+//var has global/function scope
+
+//ES6 2016
+let firstName = 'Kallum'; //this variable can be changed and reassigned
+console.log(firstName);
+firstName = 'Bill'; //when reassigning don't need the let keyword
+console.log(firstName);
+
+//let has block scope
+
+const PI = 3.14; //const keyword declares variable that cannot change
+
+Naming Convention
+camel case (first letter lowercase, next words first letter capitalised)
+variables can start with letter, $ or underscore (_)
+
+
+In HTML files we have the script tag which we can reference either files or actual code
+If we want to references a script by using src attribute with the script tag, this tag should be in the body tag
+
+<script src="main.js"> </script 
