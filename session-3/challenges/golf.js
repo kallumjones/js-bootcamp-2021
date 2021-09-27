@@ -26,10 +26,12 @@ if(strokes === 1){
     console.log(names[6]);
 }
 
-switch (strokes) {
-    case 1:
-        console.log(names[0]);
-        break;
-    case strokes <= par - 2:
-        console.log(names[1]);
-}
+//Swicth method, does not work for less than and equals.
+
+// switch (strokes) {
+//     case 1:
+//         console.log(names[0]);
+//         break;
+//     case strokes <= par - 2:
+//         console.log(names[1]);
+// }
