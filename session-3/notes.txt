@@ -1,0 +1,126 @@
+Session 3
+
+HTML
+
+Script tag has a defer attribute that will only run script when page has loaded.
+
+
+
+
+
+Javascript
+
+Memory allocation, is normally consistent throughout different data structures. 
+
+Array - Ordering matters and is due to 0-indexing
+Object - Ordering does not matter 
+	- Key : value pairs (properties)
+	- can have methods (functions within objects)
+
+String in built function (MDN is a good resource)
+Properties do not need ()
+Methods need ()
+
+e.g. length, toUpperCase(), toLowerCase(), substr(start, end)
+
+
+Arrays
+
+High order Function, is a function that can take a function as a argument or return a function as an output
+
+e.g 
+Filter - Filters array and returns any value that was true for function
+Map - Transforms array to new array
+Some - Return true is array contains 
+Sort - mutates the array as arrays are passed by reference. the function expects to receive a negative value if the first value is less than second, 0 if equal and positive if larger. So if sorting numbers can use a - b as it matches above
+
+References 
+
+When console.log(obj) because obj is passed by reference most browsers will so the current values/version of the obj so if you have changed it and want to console.log multiple times with changes, can use 
+
+
+console.log(JSON.parse(JSON.stringify(obj)); this will log value of obj at the moment of logging it 
+Vs
+console.log(obj); this may log the latest version.
+
+Destructuring
+
+Can pull out key values from objects without fully defining by using Destructuring.
+
+This can be done in both objects (using curly bracket) the name is carried forward I.e. cannot change the key name
+
+Const {name} = person;
+
+In above person is object with a key name, and this pulls out name so can be references on its own e.g. console.log(name)
+
+In arrays (using square brackets) uses the index so first variable name takes array[0] element and so on so can give them new names
+
+Array = ["test",4,"hi"]
+
+Const [firstElement] = array; //firstElement would be given "test" value
+
+Operators
+
+Loops
+
+Basic 'For' loops made up of three parts initiation, stop condition, iterator
+for(let i = 0; i < 10; I++){
+	code block
+}
+
+While loop
+Initialise variable outside, while loop is made up of a conditional and if true runs code block
+
+Let I = 0;
+while(condition is true){
+	do something
+	I++;
+}
+NB don't forget the incrementing in the while loop due to infinite loops
+
+Break and continue
+Break keyword - breaks out of the whole loop 
+Continue - skips to the next iterator
+
+Conditional
+
+If(expression){
+	do this
+} else if (expression) {
+	do this
+} else {
+	do this
+}
+
+Ternary operator is a ?
+
+
+const amount = 100;
+const shouldChargeTax = amount > 50 ? true : false;
+
+So checks left of ? If true does first thing if false does after :
+
+Switch statements
+
+Switch (variable) {
+	case 50:
+		do this;
+		break;
+	case 100:
+		do this;
+		break;
+	default:
+		do this;
+		break;
+}
+
+Switch check against the case but need explicit values so cannot do less than  for example.
+
+Equality 
+
+Strict equality === This checks that the data structure and value is equal '23 === 23 would return false
+Weak equality == This checks that the value is the same e.g. '23' == 23 would return true
+
+
+
+NB: A JavaScript class is not an object. It is a template for JavaScript objects.
