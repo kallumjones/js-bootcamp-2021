@@ -1,0 +1,85 @@
+Session 4
+
+Truthy and false values
+
+An if statement will run if the variable has a truth value, a truth value is not false which are the below.
+
+There are several variables that are classed as false
+
+0 (zero)
+'' (Empty string)
+Undefined
+NaN (Not a number)
+
+Truthy and false assignment can use || (or) to assign a default variable if the first is false
+
+let count = null;
+let text = '';
+
+let qty = count || 44;
+console.log(qty); //would log 44 due to 0 is falsy
+
+let hello = text || 'Hello';
+
+console.log(hello); //would log Hello due to '' is falsy
+
+Coalesce Operator
+
+This is ?? Operator
+
+Chaining  Operator (Optional Chaining)
+
+const zoo = {
+    lions: ['leo'],
+    zooKeeper: {name: 'Brenda'}
+};
+
+const leo = zoo.lions[0];
+console.log(leo);
+
+const bungleTheBear = zoo?.bears?.[0];
+console.log(bungleTheBear);
+
+if you do not include the chaining operator zoo.bears[0] does not exist so would spit out an error, using the ?. would give undefined and allow to check
+
+similar if a function does not exist in the object
+
+//zoo.describe() //Throws an error cause does not exist
+zoo.describe?.() //does not throw an error
+
+Can combo this and turthy/falsy assignment in scenarios like below
+const timTheTiger = zoo?.tigers?.[0] || 'No tigers in Zoo';
+
+console.log(timTheTiger);
+
+
+====Scope====
+
+Const and let have block scope, if defined within {} can be called inside only
+
+Global defined variables can be called within code blocks that follow it
+
+Local has priority over global I.e. if a variable is defined again inside a code block this is what will be used.
+
+Functions have block scope
+
+====Hoisting===
+
+Function declarations are hoisted
+Function Expressions are not hoisted (e.g. const)
+
+Best practice create functions first, const not initialised 
+
+====Functions====
+
+
+NB functions should do one thing and one thing only
+
+//SRP -- Single Responsibility Principle
+//KISS -- Keep It Simple Stupid
+//DRY -- Don't Repeat Yoursel
+
+
+
+
+

@@ -47,9 +47,11 @@ Destructuring
 
 Can pull out key values from objects without fully defining by using Destructuring.
 
-This can be done in both objects (using curly bracket) the name is carried forward I.e. cannot change the key name
+This can be done in both objects (using curly bracket) can be given an alias 
 
 Const {name} = person;
+
+Const {name: alias} = person;
 
 In above person is object with a key name, and this pulls out name so can be references on its own e.g. console.log(name)
 
