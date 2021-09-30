@@ -1,0 +1,108 @@
+=======Session 5======
+
+==Reference==
+Objects are passed by references so if you create a new variable using an object already defined will just pass reference to where the data is stored, so if you then update original object or new object key:values it would update both objects because both objects point to the same data (by reference) if you want to get around this need to create either a shallow or deep copy of the object which will point to a different data memory
+
+Number and String data types are not passed by reference
+
+==Hoisting==
+
+Function declaration are hoisted so if use use function declarations you can invoke the function anywhere in the code.
+
+Function expressions when defining by const, because let and const aren't hoisted as in they are not initialised at the top of the code, they can only be used after the line which they are declared
+
+==Function default values==
+
+When defining the parameters if you wish to has a default value can use = to set a default
+
+Function addThree (number = 0) {
+	return number + 3;
+} 
+
+==Error Handling==
+
+Can use keyword 
+
+throw new Error('error message');
+
+This will surface an error in the log message, for someone to catch using 
+
+Try{
+} catch {
+}
+
+==Stack trace==
+
+Sequence of events that get called before error. Normally located in the error log, and can follow through previous function calls, see pic for example.
+
+==function==
+
+Linked to error handling, some devs use early return to get out of code if there is an error/handling issues, but rather than having multiple returns best to have a variable and set that variable to results then return it at the end.
+
+==Spread/Rest==
+
+
+==HTML==
+
+Attributes to grab elements by 
+ID
+Class
+Data-Name (custom data attribute)
+
+
+==DOM===
+
+Caniuse - website can type javascript/CSS/HTML keyword and will tell you if a browser supports this or not
+
+
+==Linking JavaScript==
+Use ID
+To select a HTML element by their id
+Document.getElementById('elementID');
+
+Can use query selector paired with class and CSS knowledge
+Document.querySelector('CSS stuff');
+
+There is many javaScript methods from document. That either return a single HTML element or an array of elements, then you can use querySelector (returns 1 element) querySelectorAll (return array of elements)
+
+Once an element has been grabbed can be saved as a variable and updated, add to, etc, to then render on the web page.
+
+==Event Handling==
+
+Through HTML
+Several attributes/hooks in html that can be added to a opening tag all start with on
+
+E.g. onclick="function()"
+onmouseover="function()";
+
+Through JavaScript
+
+Can use .addEventListener('click', function)
+
+Can create HTML in Javascript though 
+
+Const listItem = Document.createElement('li) will create empty list <li></li>
+
+Add a class through below method
+
+listItem.classList.add('className') 
+
+
+
+.toggle(class) can add and remove a class to HTML element
+
+==This keyword binding==
+
+Function declaration bind to function
+
+Function expression/fat arrow functions does not bind so is the window
+
+
+
+
+
+
+
+
+
+

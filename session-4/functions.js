@@ -65,6 +65,6 @@ console.log(result);
 
 const addFiveArrow = num => num + 5; //one line does not need {} brackets
 
-//SRP -- Single Responsibility Principle
+//SRP -- Single Responsibilty Principle
 //KISS -- Keep It Simple Stupid
 //DRY -- Don't Repeat Yoursel
