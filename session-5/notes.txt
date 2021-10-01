@@ -97,7 +97,7 @@ Function declaration bind to function
 
 Function expression/fat arrow functions does not bind so is the window
 
-
+==
 
 
 

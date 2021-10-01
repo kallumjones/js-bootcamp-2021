@@ -24,36 +24,9 @@ The registration must be 8 in length (which includes one space)
 The first letter is to be ignored for conversion
 
 The function should return the outcome
-
 */
 
-/*
-
-Custom Registration
-
-Write a function that creates a custom car registration.
-
-Your function should:
-
-Replace 'A' with the number 4.
-Replace 'B' with the number 8.
-Replace 'S' with the number 5.
-Replace 'E' with the number 3.
-Any other number/letter is returned as the number itself
-
-So passing:
-
-MSSA SMK
-
-should yield: M554 5MK
-
-Caveats:
-
-The registration must be 8 in length (which includes one space)
-The first letter is to be ignored for conversion
-
-The function should return the outcome
-*/
+//Replace all (doesn't seem to work within node...)
 
 function customReg(registration) {
     let splitRegArray = registration.split("");
@@ -67,10 +40,17 @@ function customReg(registration) {
       // console.log(firstLetter);
       // console.log(restOfReg);
   
+      //replaceALl works in browser but not in node
       restOfReg = restOfReg.replaceAll("A", 4);
       restOfReg = restOfReg.replaceAll("B", 8);
       restOfReg = restOfReg.replaceAll("S", 5);
       restOfReg = restOfReg.replaceAll("E", 3);
+
+      //replace with regexp global works for node .js
+      // restOfReg = restOfReg.replace(/A/g, 4);
+      // restOfReg = restOfReg.replace(/B/g, 8);
+      // restOfReg = restOfReg.replace(/S/g, 5);
+      // restOfReg = restOfReg.replace(/E/g, 3);
       // console.log(restOfReg);
   
       return firstLetter + restOfReg;
@@ -79,6 +59,8 @@ function customReg(registration) {
     }
   }
   
+//Loop and Switch method
+
   function customeRegLoop(registration) {
     let splitRegArray = registration.split("");
     // console.log(registration.split(" "));
