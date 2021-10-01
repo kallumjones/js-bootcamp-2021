@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <link rel="stylesheet" href="styles.css" />
+    <title>Rock Paper Scissors</title>
+  </head>
+  <body class="container">
+    <h1 id="RPS">Play a Game of Rock Paper Scissors!</h1>
+
+    <div class="choices">
+      <p>Select your tool! click on an image!</p>
+      <img class="image"
+        src="images/rock.png"
+        alt="picture of rock hand symbol"
+        id="rock"
+      />
+      <img class="image"
+        src="images/paper.png"
+        alt="picture of paper hand symbol"
+        id="paper"
+      />
+      <img class="image"
+        src="images/scissors.png"
+        alt="picture of scissors hand symbol"
+        id="scissors"
+      />
+    </div>
+
+    <div id="battle-ground">
+      <!-- <label for="battle-user">User:</label><br> -->
+      <img id="battle-user" /> 
+      <!-- <label for="battle-comp">Computer:</label> <br> -->
+      <img id="battle-comp" />
+    </div>
+
+    <div id="results"></div>
+    
+
+    <script src="rps.js"></script>
+  </body>
+</html>
