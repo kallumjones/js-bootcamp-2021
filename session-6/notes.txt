@@ -2,3 +2,14 @@
 
 ==Callback Functions==
 
+A function passed into another function as an argument to be excused later
+
+Synchronous callback functions - Code executes sequentially top to bottom.
+
+Asynchronous callbacks - functions passed into other functions that wait for one part to finish to run the next 
+
+Const process (callback) => {
+Do something
+
+Callback()
+}
