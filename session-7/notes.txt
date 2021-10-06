@@ -35,7 +35,8 @@ Will run all code, so if functions have been invoked it will still run.  But can
 
 ==Browser/ES6 method==
 
-Inside html file need to add type="module" to the script tag
+Inside html file need to add type="module" to the script tag, only the one 'main.js' needs to be added into the HTML file using a script tag, with type attribute, all the other files that this main.js will use should be imported at the top of the main.js rather than adding additional script tags into the HTML file.
+
 In JS if there is a datatype want to export need to use the keyword export in front of the data
 
 E.g. 
@@ -47,10 +48,14 @@ To import into file you want at top of script need to use keyword  import
 E.g.
 Import {courierByKey} from ".filepath";
 
-Using export default mean this is the only function that the file need to export.
+Using export default mean this is the only function that the file need to export. When importing no {} for default
 
 Can give alias during import 
 Import {function as newFunctionName} from ".path";
+
+If you have multiple exports in a module file that you want to import into main.js then can use an alias and import all
+
+Import * as ArrayFunc from ".filepast";
 
 ===Babel====
 
@@ -62,7 +67,7 @@ There is a website that can test and show you how it compiles
 
 Is kind of like a specification/template/blueprint that objects can be built from.
 
-Use keyword class to create a class, generally name will start with a capital letter.
+Use keyword class to create a class, generally name will start with a capital letter (pascal case).
 
 Use constructor, provide parameters (key:value pair) often will make these private by adding an _
 
@@ -91,6 +96,9 @@ Get name() {
 
 Using extends can extend an already built class and extend it with additional new parameters, use a constructor with the 'super' keyword. Super is always called first in the constructor. And the extended class will contain everything from the parent class. 
 
+==Exporting Class==
+
+Preference to new file to export for each class, can export /import the same as functions
 
 
 

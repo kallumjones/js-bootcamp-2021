@@ -1,0 +1,22 @@
+{
+  "name": "npm-intro",
+  "version": "1.0.0",
+  "description": "This is a simple npm demo",
+  "main": "index.js",
+  "type": "module",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [
+    "npm",
+    "demo"
+  ],
+  "author": "Kallum Jones",
+  "license": "MIT",
+  "dependencies": {
+    "lodash": "^4.17.21"
+  },
+  "devDependencies": {
+    "gulp": "^4.0.2"
+  }
+}

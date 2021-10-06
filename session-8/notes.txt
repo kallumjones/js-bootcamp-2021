@@ -1,0 +1,161 @@
+==Session 8==
+
+==npm==
+
+Node Package Manager:
+
+Provides the ability for developer to add library	and modules into your code.
+
+npm -v shows what version you have
+
+Npm init -- initialise and created package.json (metadata) files for npm
+
+Package name:
+Version:
+Description:
+Entry point:
+Test command:
+Git repository: 
+Keywords: phrase for search
+Author: own name/team name
+License: property right over code
+
+==install library==
+
+Use install keyword to install third party library	to be able to use within your project.
+
+Npm install library name --save
+
+This then outputs a message that tells you what to install, and vulnerabilities, if this number is high consider if you need it as it may introduce security issues
+
+To then import into your js files use keyword import 
+
+e.g. 
+import _ from 'lodash'; (_ is a shorthand way of saying lodash/library name)
+
+When you add  a library by --save it adds dependencies within the package.json file, this is basically what is required to run you app. 
+
+e.g.
+ "dependencies": {
+    "lodash": "^4.17.21"
+  }
+The ^ is the earliest is can run with.
+
+There is also dev dependencies these are required for development and is 
+
+'install library --save-dev'
+
+Shorthand for install
+
+Npm i lodash -S (npm install lodash --save)
+Npm i gulp -D (npm install gulp --save-dev)
+
+Say you get a project from git, and uses npm as a project if there is a package.json file know can use npm for the project, then npm install will take all dependencies from the package.json file and install everything that is needed.
+
+DO NOT UPLOAD node_modules TO GITHUB, ADD TO .gitignore by in the .gitignore ass node_modules/ just upload package.json and package_lock.json files
+
+==running=
+In the package.json file need to add "type":"module" this lets the files know it is a module file and can run
+
+An alternative is to have the file extension as .mjs rather than .js this does not require the type module method.
+
+==symantic versioning==
+
+Major.minor.patch
+
+Major - massive change old code may not work, I.e not backwards compatible 
+Minor - new feature
+Patch - bug fixes
+
+4.0.2
+
+==useful packages==
+
+Lodash -- 
+Gulp -- tool provided by javascript brings several 
+
+==useful website==
+
+npmjs.com
+
+
+
+
+==Storage in browsers==
+
+Storage: cookies, localStorgae and session Storage
+
+When inspecting can click application tab and can see storage in here
+
+e.g. local
+
+So localStorage will not clear your data when your page is reloaded.
+
+
+Difference between local and session, session only stays open for as long as the session/browser is open.
+
+Cookies are there to provide tracking info etc. normally done through create from the server, so can receive a cookie from back-end as string
+
+==synchronisation== 
+
+setTimeout(function, time)
+
+Better practice to create a variable for how long rather than putting numbers in time parameter, in thousand of a seconds, so 1000 = 1 sec
+
+setInterval(function, time) runs function every time seconds
+
+To clear an interval set the interval into a variable and  then clearInterval(interval)
+
+==Promises==
+
+Promise are objects that represent the eventual outcome of an asynchronous operation and can be on 1 of 3 states:
+
+Statuses:
+ - Pending - Initial state, operation has not yet completed
+ - Fulfilled/Resolved - operation has completed successfully and promise now has a resolved value
+ - Rejected - operation had failed and promise has a reason for the failure usually an error of some kind.
+
+To create a new promise object the new keyword is needed with the promise constructor
+
+Return new Promise((resolve, reject) => {
+}
+
+A promise has a function out the box that takes two parameters revolve and 
+
+To handle a promise that has been resolved we use the .then() method on the promise this is a higher order function that takes two callback functions as arguments referred to as handles.
+
+When the promise settles the appropriate handle will be invoked wit the settled value
+
+i.e. if the promise is resolved the resolved value will be passed through into the resolved handle function from the then() and if the promise is rejected will pass the rejected value from the promise into the rejected handler from the then.
+
+.then(() => )
+
+
+==async await==
+
+An async function, can declare an async function with keyword async, inside the async function we can use 
+
+Await keyword this, pause execution of our function until an asynchronous action completes and the awaited promise is no longer pending, await returns the resolved value of awaited promise, can make multiple awaits within a function to produce code tat reads synchronous 
+
+==HTTP==
+
+HyperText transfer protocol
+
+Client - server 
+
+200 ok
+
+4xx you have provided something wrong
+5xx server has gone wrong
+
+There are different requests methods
+
+Headers will include what you have requested and what type of method it was.
+
+Fetch API
+
+Can use fetch() to get HTTP requests by passing a url default method is get,
+
+
+
+
