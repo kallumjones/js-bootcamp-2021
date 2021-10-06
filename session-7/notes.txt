@@ -1,0 +1,105 @@
+===Session 7===
+
+==Modularisation== 
+
+Bundling - bundles everything together into a single file for each language, e.g.minified
+
+Minified - will have .min in file and is compacted language without spaces etc, this is for performance
+
+Bootstrap is a CSS framework that allows you to right boilerplate CSS from knowing class name.
+
+==Node==
+
+To run files through terminal/shell
+
+Node filename.js (this will run and output into terminal)
+
+To export files for modularisation in a js file
+
+module.exports = {data types}
+
+Can rename during the module exports 
+
+Module.export = {sum: functionAdd, divide};
+
+To pull code into other files can use
+
+Require keyword
+
+Require = ('filepath');
+
+e.g. 
+Const add = require('./calculator') don't need .js as know that it will be receiving a JavaScript file
+
+Will run all code, so if functions have been invoked it will still run.  But can only use what you have actually exported. Can export any data type, e.g. array, string, number, object etc, example can be seen in advent of code.
+
+==Browser/ES6 method==
+
+Inside html file need to add type="module" to the script tag
+In JS if there is a datatype want to export need to use the keyword export in front of the data
+
+E.g. 
+Export function name() {
+}
+
+To import into file you want at top of script need to use keyword  import
+
+E.g.
+Import {courierByKey} from ".filepath";
+
+Using export default mean this is the only function that the file need to export.
+
+Can give alias during import 
+Import {function as newFunctionName} from ".path";
+
+===Babel====
+
+Babel - is a JavaScript compiler, converts ES6 to be backwards compatible in modern day browsers that do not support ES6 syntax or methods 
+
+There is a website that can test and show you how it compiles
+
+==Classes==
+
+Is kind of like a specification/template/blueprint that objects can be built from.
+
+Use keyword class to create a class, generally name will start with a capital letter.
+
+Use constructor, provide parameters (key:value pair) often will make these private by adding an _
+
+constructor(parameters) {
+this._name = name;
+This._age = age;
+}
+
+To create a new instance from a class can use 'new' and pass arguments into the class that match the constructor parameters
+
+==getter and setters==
+
+A setter is a way of setting a property in a class/instance e.g. maybe add rules applied 
+
+Set (name) {
+	this._name = name;
+}
+
+A getter is a way of getting/returning a property from a class/instance
+
+Get name() {
+	Return this.name;
+	}
+
+==Extend==
+
+Using extends can extend an already built class and extend it with additional new parameters, use a constructor with the 'super' keyword. Super is always called first in the constructor. And the extended class will contain everything from the parent class. 
+
+
+
+
+
+
+
+
+
+
+
+
+
