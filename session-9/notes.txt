@@ -1,0 +1,13 @@
+==Session 9==
+
+==HTTP Post==
+
+Fetch - may not be widely used, and xhr were used which is request and response. But the modern browsers use fetch and a lot of developers now use axios 
+
+Every event listener will give an event as argument
+
+Done through a form html element, similar use fetch and will need async and await if doing through fetch if we expect a promise will be returned.
+
+GET should be used for retrieving data, not for posts this id due to a get will add information into the url, therefor POST should be used when posting data.
+
+==Testing==
