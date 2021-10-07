@@ -11,3 +11,99 @@ Done through a form html element, similar use fetch and will need async and awai
 GET should be used for retrieving data, not for posts this id due to a get will add information into the url, therefor POST should be used when posting data.
 
 ==Testing==
+
+To make sure that things work as expected, and can be automated
+
+End-to-end testing - test the whole pipeline of work
+Unit testing - Create a test to specifically test a small code block/feature/function
+
+Functional testing
+	Manual testing
+	Integration testing - This is where you as a develop write tests to verify that any external parts you rely in work with your program
+	Smoke testing - When testers receive code they'll usually run a set of tests to verify that your latest changes won't break their tests
+
+Non-functional testing
+	Performance testing - is the system performance and meeting the KPIs?
+	Load testing - can the application handle millions of requests without degrading the performance
+	Stress testing - Can your application work outside of it's boundaries? Your program handles only 100 requests, what if I sent it 200?
+
+Unit testing
+	testing a small bit of functionality, several unit test can be referred to as a suite
+
+Mocha, Karma are other test framework
+
+Jest is a test framework that we will look at
+
+To create a test file use the below naming convention
+
+Filename.test.js
+
+To write singular test can use test:
+To then test use keyword test('description of test', anon function body of test)
+
+First argument is a description, second is annon function with body of test
+
+When thinking about a test follow 
+    //AAA
+    //ARRANGE
+    //ACT
+    //ASSERT
+
+In Assert section use expect object
+
+
+Matches - Look at jest website
+
+If you are testing multiple things to do with one thing, can use a describe and it this breaks your test suite into component, that allow you to then organise tests
+
+==run test==
+Can use npm test to run the test files, and they will then output pass of fail
+
+Adding .skip to describe/it/test will skip tests when being run so if need to skip certain tests
+
+If you are running tests with multiple same lines, you can set up this before the tests using the below function.
+
+beforeEach - whenever a test is ran it will run before each test.
+afterEach - will run after each test
+
+Can run in the command line
+npm test -- --verbose 
+Or can add --verbosein the JSON.package file 
+Will add the lines and description of each test run
+
+==coverage==
+
+Code coverage
+
+Add 
+    "coverage": "jest --coverage"
+
+To run 
+	npm run coverage
+
+This outputs a table, which tells how much of a file has been tested by your tests.
+
+==tdd=
+
+Test Driven Development, 
+
+Generally write the test first, then write minimum amount of code for that code to pass
+
+Tests become a form of documentation.
+
+TDD lifecycle
+	Write the test code before implementation code
+	only write new code ...
+
+One of the hard parts, is creating the initial test
+
+So create 
+
+Refactor - improve code to make it more readable, basically change the code (generally not making huge changes)
+
+
+
+
+
+
+
