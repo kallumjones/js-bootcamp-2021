@@ -71,6 +71,8 @@ npm test -- --verbose
 Or can add --verbosein the JSON.package file 
 Will add the lines and description of each test run
 
+Can add file path into the folder you want to test
+
 ==coverage==
 
 Code coverage

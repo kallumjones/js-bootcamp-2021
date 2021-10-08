@@ -14,7 +14,7 @@ export const addAllNumbers = (arr) => {
 
 export const divide = (num1,num2) => {
     if(num2 === 0) {
-        throw new ErrorEvent('Can\'t divide by zero')
+        throw new Error('Can\'t divide by zero')
     }
     return num1/num2;
 }
