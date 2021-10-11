@@ -103,6 +103,15 @@ So create
 
 Refactor - improve code to make it more readable, basically change the code (generally not making huge changes)
 
+==jest==
+
+Run the same test block with a certain amount of data can use .each this then runs the test passing through multiple values.
+
+==Mobbing==
+
+
+
+
 
 
 

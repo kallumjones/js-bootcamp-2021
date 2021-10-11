@@ -44,3 +44,14 @@ describe('FizzBuzz:', () => {
         })
     })
 })
+
+describe('Fizzbuzz with each', ()=>{
+    it.each([
+        [1,1],
+        [3,'Fizz'],
+        [5,'Buzz'],
+        [15,'FizzBuzz']
+    ])('When given %i should return %s', (number, expected) => {
+        expect(fizzBuzz(number)).toBe(expected);
+    });
+});
