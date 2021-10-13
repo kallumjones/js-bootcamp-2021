@@ -1,0 +1,161 @@
+==Core skills talk==
+
+Parul Singh - @manhatten Partners
+
+Personal brand
+
+What is a personal brand - all about you, a presence online, how you would be described in a few words, 
+
+What am I good at?
+What do I want to be known for? 
+
+USP?
+
+Your CV is not enough
+The brand does the work for you
+Find your support network and make industry friends
+Get he opportunities you dream of
+Find mentors
+
+Platforms: 
+Linkedin
+Twitter
+Instagram 
+YouTube
+Twitch
+GitHub
+Meetups 
+Dev.to
+Medium.com
+Quora
+Stack overflow
+
+Canna
+
+Top tips, 
+
+Consistent profile photo across platforms
+Comment of other people posts
+Titter and Instagram are the place for hashtags, not linked in
+You don't have to post original content every day
+Be genuine
+
+
+Add bio, keywords
+
+Linktree
+
+
+Danny Thompson
+Yusuf codes
+Charmaine Connors 
+Ian king
+
+
+Start conversations when follow and follow back?
+
+Linkedin public thank yous, 
+
+Twitter 100 days of code
+
+==Regex==
+
+https://regexr.com/ useful test regex website
+
+Regular expressions, Allows a way to search text that match what you would like to check, one of the main use cases if validation on the front end
+
+Can be used in the majority of languages
+
+Would generally define regex with const
+
+Use two // to define regex, then the values in the middle are used
+
+Flags can be added at the end of the /
+g - global 
+i - case insensitive	
+
+Ways of writing regex
+Quantifiers
+
++ - match the letter 1 or more times
+{2}
+
+e+a? (Matches e as many times and an a can follow)
+Optional match ?
+
+
+* - match 0 or many times preceding character
+
+. - matches any character apart from line breaks
+
+If you want to search for special characters can use \ followed by special character and this will then search for it (escaped character)
+
+\w - matches any word character
+\W - matches any non-word character (e.g. spaces)
+
+\s - matches space
+\S - matches any character that's not a space
+
+{number} - matches in groups of specified number
+{min,max} - 
+\w{4,} - matches words with at least 4 characters
+
+Grouping of characters:
+
+
+[] - character set match any character in the set
+
+/[cf]at/ - would match cat and fat
+
+/[a-z]/ - match any lower case character
+/[0-9/ - matches any number 0-9
+
+/[0-9]{3}/ - would match nay 3 length numbers
+
+() - character set
+
+(t|e|r){2,3} - any combo or t e r of length 2 or 3
+
+^ - beginning of string, can use m flag to get multiline
+$ - last line
+
+\d - any number 
+
+Phone number with hyphen example, match any 3 numbers followed by hyphen by 3 digits by hyphen by 4 digits
+(\d{3})-(\d{3})-(\d{4})
+
+==VS Code useful extensions==
+
+ESlint 
+
+Npm I -D 
+
+When setting up a npm library can install packages to do with ES lint and Prettier
+
+ES lint has different configurations 
+
+To then use ESlint 
+
+ESlint --init
+
+After answering questions creates file that has the rules to lint 
+
+Will be a rules codeblock that turn off or switch to warn by default ESlint rules 
+
+
+Can add to package.json file to run lint before building and pushing code, can run though terminal and node
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

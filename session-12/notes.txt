@@ -1,0 +1,190 @@
+===React JS===
+
+A javascript library for building user interfaces
+
+NB - React - is for web applications
+NB - React Native - is for mobile applications
+
+React under the hood:
+
+React allows to use JSX (javascript extension) which combines HTML and JS together, so can put HTML inside JS to render a page.
+
+How the interface is created?
+
+React uses a single DIV element on a single page to render the entire application (SPA)
+
+How functionality is split up across the app?
+
+React is keen on separating parts of the UI and treat them as components, which in turn also have componentised (?) JavaScript files
+
+How data is stored in the browser?
+
+React uses a controlled component way of looking at things. As the user types into the input field for example, the value is set and stored (in a state object)
+
+How the UI is updated?
+
+React controls the values entered in a state object and thus creating elements dynamically is much easier
+
+React uses its own DOM (the virtual DOM) so only updates the section of UI that needs updating
+
+File naming conventions is capitals all words
+
+==SPA==
+
+Single Page Application
+
+
+==Other Frameworks==
+
+Angular JS (uses typescript)
+Vue JS
+React Js
+
+They all have their own idea of componants.
+
+==Creating React Apps=
+
+CLI - client interface
+
+npx create-react-app folder-name
+
+This will create a react-app with all dependencies installed, e.g. package.json, node_modules
+
+React has its own live server thing, 
+
+When creating a react app it has all the boiler plate files (some tidying may be needed)
+
+== react-router-dom ==
+
+Npm I react-router-dom
+
+This allows us to move around the application, from page to page, have to install react-router-dom
+
+Then can import into index.js BrowserRouter this allows us to change pages
+
+Import Route and Switch
+
+These can be use to render different pages, 
+
+
+Often create a folder for pages and components
+
+Components are what will be shown inside pages
+
+==ES7 Shortcuts==
+
+rafce creates a react arrow functional component with ES& modules
+
+
+
+==React Methods==
+
+Components are capitalised, and are reference in code as a tag with closing tag, this then renders the file with the same name which is a component as a function with HTML inside
+
+<components />
+<MainNavigation />
+
+
+
+and can move to different pages using route within the render app function
+These are JSX tags and then when this renders it will expand everything in the components.js file (written as HTML)
+
+To create a navigation header can create a new component file and then 
+Create link can use {Link} from react-router-dom, this is similar to an anchor tag in HTML but does not refresh 
+<Link to>All Travel Blog</Link>
+Has property to (this is where you want to go to) these value then has to match the path in the <Route> tags
+
+==importing CSS with React==
+
+Creat a .module.css file which is a css file then in the component file can import css file at the top of file.
+
+
+import classes from './MainNavigation.module.css';
+
+Then can add dynamic class to each HTML element
+
+<header className={classes.header}>
+<div className={classes.logo}>Travel Blogger</div>
+
+className={classes.logo} is a way of doing dynamic styling within components.
+
+Anything dynamic	in react use {} brackets
+
+Render a list dynamically, for each element in array BLOG_DATA return a dynamic list
+<ul>
+    {BLOG_DATA.map((travelBlog) => {
+         return <li key={travelBlog.id>{travelBlog.title}</li>
+     })}
+            </ul>
+
+Each of the above needs a unique key per ls element, we can do this by adding key into the li tag
+
+Prop in react is an attribute
+
+The above list can be its own component
+
+
+You can pass data from components, props are the thing a component receives 
+
+Examples can be seen in GitHub repo and codebase.
+
+==hooks==
+
+React has a thing called hooks, functions provided by react 
+
+useRef() - can be used to create pointer 
+
+const titleInputRef = useRef();
+These can then be binded to input using ref
+
+
+<input type="text" id="title" required ref={titleInputRef}/>
+
+Then can get the value variable once bonded by using 
+
+const enteredTitle = titleInputRef.current.value;
+
+useHistory()- gives access to history
+
+useState() - 
+useEffect() - 
+
+
+
+==Firebase free database ==
+
+Can create a database that we can store data in through connecting the data that we entered by a post command 
+
+This uses mongo behind the scenes
+
+Get a url that we can then use in fetch
+
+Always send metadata with a post done though headers object
+
+To hide sensitive information can use a .env file, create a variable with the information you want to hide, then where you want to use it can use 
+
+Process.env.VariableName
+
+M - Mongo
+E - Express
+R - React
+N - Node
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
