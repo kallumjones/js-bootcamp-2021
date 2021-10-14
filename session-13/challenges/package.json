@@ -1,0 +1,19 @@
+{
+  "name": "challenges",
+  "version": "1.0.0",
+  "description": "Bootcamp Challenges and Tests",
+  "main": "index.js",
+  "scripts": {
+    "test": "jest --verbose",
+    "coverage": "jest --coverage"
+  },
+  "author": "Kallum Jones",
+  "license": "ISC",
+  "devDependencies": {
+    "@babel/preset-env": "^7.15.4",
+    "jest": "^27.1.0"
+  },
+  "dependencies": {
+    "@types/jest": "^27.0.1"
+  }
+}

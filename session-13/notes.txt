@@ -1,1 +1,49 @@
 ==Session 13==
+
+==Continuous Integration/Deployment==
+
+Principles of DRY?
+
+Docker
+Makes your application into a container/virtual box, that allows you push up into a docker repository that others can then use, this allows people to use the same specs as the project needs, and it also does not take up as much memory space on your laptop. As docker uses little space on your laptop
+
+Principles of continuous integration
+
+Get from slides
+
+
+
+
+Read up about Jenkins and continuous deployment	
+
+
+
+Command click to jump to function in another file
+
+
+
+==Tips==
+
+Can create snippets through file => preferences => select snippet file and will have a description of how to actually create a snippet.
+
+There are also lots of alternative snippets extensions that you can install and have some pre added snippets.
+
+How do you learn with alongside work stream?
+
+Proactively picked up another tech/language if feel like brain is stagnant.
+
+Speak and network with others.
+
+Make a project or read blogs in own time to try and pick up something new as this will help solidify learning.
+
+Check out the official documentation (more so what it is used for rather than syntax)
+
+Register trends for news
+Media.com (trends)
+
+Start a project in your head to build up (try and keep weekends free)
+
+Stack overflow. 
+
+Read up on library documentation
+
